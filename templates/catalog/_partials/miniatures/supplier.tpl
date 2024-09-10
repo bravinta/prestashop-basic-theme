@@ -22,37 +22,36 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-{block name='brand_miniature_item'}
-  <li class="brand">
-    <div class="brand-img">
-      <a href="{$brand.url}">
+{block name='supplier_miniature_item'}
+  <li class="supplier">
+    <div class="supplier-img">
+      <a href="{$supplier.url}">
         <picture>
-          {if !empty($brand.image.bySize.small_default.sources.avif)}<source srcset="{$brand.image.bySize.small_default.sources.avif}" type="image/avif">{/if}
-          {if !empty($brand.image.bySize.small_default.sources.webp)}<source srcset="{$brand.image.bySize.small_default.sources.webp}" type="image/webp">{/if}
+          {if !empty($supplier.image.bySize.small_default.sources.avif)}<source srcset="{$supplier.image.bySize.small_default.sources.avif}" type="image/avif">{/if}
+          {if !empty($supplier.image.bySize.small_default.sources.webp)}<source srcset="{$supplier.image.bySize.small_default.sources.webp}" type="image/webp">{/if}
           <img
-            src="{$brand.image.bySize.small_default.url}"
-            alt="{if !empty($brand.image.legend)}{$brand.image.legend}{else}{$brand.name}{/if}"
+            src="{$supplier.image.bySize.small_default.url}"
+            alt="{if !empty($supplier.image.legend)}{$supplier.image.legend}{else}{$supplier.name}{/if}"
             class="img-fluid"
             loading="lazy"
           >
         </picture>
       </a>
     </div>
-    <div class="brand-infos">
-      <p><a href="{$brand.url}">{$brand.name}</a></p>
-      {$brand.text nofilter}
+    <div class="supplier-infos">
+      <p><a href="{$supplier.url}">{$supplier.name}</a></p>
     </div>
-    <div class="brand-products">
-      <a href="{$brand.url}">
-        {if $brand.nb_products > 1}
-          {l s='%number% products' d='Shop.Theme.Catalog' sprintf=['%number%' => $brand.nb_products]}
-        {elseif $brand.nb_products == 1}
-          {l s='%number% product' d='Shop.Theme.Catalog' sprintf=['%number%' => $brand.nb_products]}
+    <div class="supplier-products">
+      <a href="{$supplier.url}">
+        {if $supplier.nb_products > 1}
+          {l s='%number% products' d='Shop.Theme.Catalog' sprintf=['%number%' => $supplier.nb_products]}
+        {elseif $supplier.nb_products == 1}
+          {l s='%number% product' d='Shop.Theme.Catalog' sprintf=['%number%' => $supplier.nb_products]}
         {else}
           {l s='No products' d='Shop.Theme.Catalog'}
         {/if}
       </a>
-      <a href="{$brand.url}">{l s='View products' d='Shop.Theme.Actions'}</a>
+      <a href="{$supplier.url}">{l s='View products' d='Shop.Theme.Actions'}</a>
     </div>
   </li>
 {/block}

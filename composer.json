@@ -1,6 +1,6 @@
 {
     "name": "prestashop/classic",
-    "description": "Classic theme for PrestaShop 8.1",
+    "description": "Classic theme for develop PrestaShop version",
     "type": "prestashop-theme",
     "license": "AFL-3.0",
     "authors": [
@@ -10,7 +10,7 @@
         },
         {
             "name": "PrestaShop Community",
-            "homepage": "https://contributors.prestashop.com/"
+            "homepage": "https://contributors.prestashop-project.org/"
         }
     ],
     "minimum-stability": "dev",
