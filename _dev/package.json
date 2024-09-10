@@ -50,6 +50,7 @@
     "webpack-sources": "^0.1.0"
   },
   "dependencies": {
+    "postcss": "^8.4.45",
     "sprintf-js": "^1.1.2"
   }
 }
