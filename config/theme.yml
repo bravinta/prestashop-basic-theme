@@ -1,16 +1,15 @@
-name: bravinta-basic-theme
-display_name: Bravinta Basic Theme
-version: 0.0.1
+name: classic
+display_name: Classic
+version: 2.1.3
 author:
-  name: "Bravinta Agency SL"
-  email: "sales@bravinta.com"
-  url: "https://bravinta.com"
+  name: "PrestaShop SA and Contributors"
+  email: "contact@prestashop.com"
+  url: "https://www.prestashop-project.org"
 
 meta:
   compatibility:
-    from: 9.0.0
+    from: 8.1.0
     to: ~
-    framework: 'bootstrap-v4.0.0-alpha.5'
 
   available_layouts:
     layout-full-width:

@@ -22,8 +22,23 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
+{extends file=$layout}
 
-<section class="featured-products clearfix mt-3">
-  <h2>{l s='Customers who bought this product also bought:' d='Shop.Theme.Catalog'}</h2>
-  {include file="catalog/_partials/productlist.tpl" products=$products productClass="col-xs-12 col-sm-6 col-lg-4 col-xl-3"}
-</section>
+{block name='content'}
+  <section id="main">
+
+    {block name='brand_header'}
+      <h1>{l s='Brands' d='Shop.Theme.Catalog'}</h1>
+    {/block}
+
+    {block name='brand_miniature'}
+      <ul>
+        {foreach from=$brands item=brand}
+          {include file='catalog/_partials/miniatures/brand.tpl' brand=$brand}
+        {/foreach}
+      </ul>
+    {/block}
+
+  </section>
+
+{/block}
