@@ -1,5 +1,5 @@
 name: bravinta-basic
-display_name: Bravinta Basic
+display_name: bravinta-basic
 version: 0.0.1
 author:
   name: "PrestaShop SA and Contributors"
@@ -8,9 +8,8 @@ author:
 
 meta:
   compatibility:
-    from: 9.0.0
+    from: 8.1.0
     to: ~
-    framework: 'bootstrap-v4.0.0-alpha.5'
 
   available_layouts:
     layout-full-width:
